@@ -25,7 +25,7 @@ const HeroExperience = () => {
 
       <group
         scale={isMobile ? 0.7 : 1}
-        position={isMobile ? [-30, -120, 0] : [-30, -20, 0]}
+        position={isMobile ? [-30, -120, 0] : [-30, -30, 0]}
       >
         <BitDJ />
       </group>

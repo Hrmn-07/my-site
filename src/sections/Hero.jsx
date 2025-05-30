@@ -1,3 +1,4 @@
+import { Github, Linkedin, Mail } from "lucide-react";
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
@@ -50,19 +51,38 @@ const Hero = () => {
               <h1>Into Scalable,</h1>
               <h1>Performant Apps</h1>
             </div>
-            <div className="z-30 relative pointer-events-none md:max-w-xl max-w-xl bg-[#d9ecff]/60 rounded-xl">
+            <div className="z-30 relative md:max-w-xl max-w-xl bg-[#d9ecff]/60 rounded-xl">
               <p className="text-black md:text-xl font-semibold tracking-wide">
                 Hi, i'm <span className="text-3xl text-blue-700">Herman</span>.
                 Full Stack Developer based in Batam, Indonesia with a passion
                 for code and design.
               </p>
+            </div>
+            <div className="flex items-center gap-5 bg-[#d9ecff]/60">
+              <p className="text-black text-lg">Let's connect :</p>
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=hermanus.rmp@gmail.com&su=Hello%20from%20your%20website"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="pt-1 text-black hover:text-blue-700 hover:underline cursor-pointer pointer-events-auto"
+                className="text-black hover:text-blue-700 cursor-pointer transition-all"
               >
-                <p className="pt-3">Email me @ hermanus.rmp@gmail.com</p>
+                <Mail className="w-7 h-7" />
+              </a>
+              <a
+                href="https://github.com/Hrmn-07"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-blue-700 cursor-pointer transition-all"
+              >
+                <Github className="w-7 h-7" />
+              </a>
+              <a
+                href="https://linkedin.com/in/hermanus-rumapea-b4879225a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-blue-700 cursor-pointer transition-all"
+              >
+                <Linkedin className="w-7 h-7" />
               </a>
             </div>
 
