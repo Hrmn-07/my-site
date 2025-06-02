@@ -35,10 +35,13 @@ const AnimatedCounter = () => {
     <div id="counter" ref={counterRef} className="padding-x-lg xl:mt-0 mt-32">
       <div className="mx-auto grid-4-cols">
         {counterItems.map((item) => (
-          <div className="border-4 border-zinc-900 rounded-xl p-5 flex flex-col justify-center">
+          <div
+            className="border-4 border-zinc-800 rounded-xl p-5 flex flex-col justify-center"
+            style={{ boxShadow: "4px 4px 5px rgba(90, 90, 90, 0.5)" }}
+          >
             <div
               key={counterItems.label}
-              className="counter-number text-black text-5xl font-bold mb-2"
+              className="counter-number text-gray-800 text-5xl font-bold mb-2"
             >
               {isVisible ? (
                 <CountUp suffix={item.suffix} end={item.value} />

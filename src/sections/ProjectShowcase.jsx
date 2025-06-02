@@ -46,17 +46,23 @@ const ProjectShowcase = () => {
         <div className="showcaselayout">
           {/* left section */}
           <div className="first-project-wrapper" ref={project1Ref}>
-            <div className="image-wrapper hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div
+              className="image-wrapper hover:scale-105 transition-all duration-300 cursor-pointer z10"
+              style={{ boxShadow: "3px 3px 5px rgba(90, 90, 90, 0.5)" }}
+            >
               <a href="https://github.com/Hrmn-07/explorama" target="_blank">
                 <img src="/images/explorama-edit.png" alt="explorama" />
               </a>
             </div>
             <div className="text-content">
-              <h2>
+              <h2
+                style={{ textShadow: "-2px 2px 3px rgba(255, 255, 255, 0.8)" }}
+                className="tracking-wide text-gray-800"
+              >
                 Create your own Personal Trip Itineraries by AI with{" "}
                 <span className="text-blue-700">Explorama</span>
               </h2>
-              <p className="text-black md:text-xl">
+              <p className="text-gray-800 md:text-xl">
                 Explorama is an AI powered travel agency site using Typescript,
                 React, Vite, Tailwind, and Appwrite
               </p>
@@ -65,11 +71,16 @@ const ProjectShowcase = () => {
           {/* right section */}
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
-              <div className="image-wrapper border-4 border-zinc-900 rounded-xl bg-white">
+              <div className="image-wrapper border-4 border-zinc-800 rounded-xl bg-white">
                 <a href="https://github.com/Hrmn-07/shopset" target="_blank">
                   <img src="/images/shopset.png" alt="shopset" />
                 </a>
-                <p className="text-black md:text-xl font-semibold py-2">
+                <p
+                  className="text-gray-800 md:text-xl font-semibold py-2"
+                  style={{
+                    textShadow: "-2px 2px 3px rgba(255, 255, 255, 0.8)",
+                  }}
+                >
                   <span className="text-blue-700">Shopset</span> - Ecommerce App
                 </p>
                 <p className="text-sm text-black">
@@ -78,11 +89,16 @@ const ProjectShowcase = () => {
               </div>
             </div>
             <div className="project pt-10" ref={project3Ref}>
-              <div className="image-wrapper border-4 border-zinc-900 rounded-xl bg-white">
+              <div className="image-wrapper border-4 border-zinc-800 rounded-xl bg-white">
                 <a href="https://github.com/Hrmn-07/movispot" target="_blank">
                   <img src="/images/movispot.png" alt="movispot" />
                 </a>
-                <p className="text-black md:text-xl font-semibold py-2">
+                <p
+                  className="text-gray-800 md:text-xl font-semibold py-2"
+                  style={{
+                    textShadow: "-2px 2px 3px rgba(255, 255, 255, 0.8)",
+                  }}
+                >
                   <span className="text-blue-700">MoviSpot</span> - Movie App
                 </p>
                 <p className="text-sm text-black">

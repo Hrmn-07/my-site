@@ -1,3 +1,4 @@
+import TitleHeader from "../components/TitleHeader";
 import { logoIconsList } from "../constanst";
 
 const LogoIcon = ({ icon }) => {
@@ -13,6 +14,7 @@ const LogoSection = () => {
     <div className="md:my-20 my-10 relative">
       <div className="gradient-edge" />
       <div className="gradient-edge" />
+      <TitleHeader sub="Technologies I've Worked With" />
 
       <div className="marquee h-52">
         <div className="marquee-box md:gap-12 gap-5">

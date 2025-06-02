@@ -1,8 +1,10 @@
-import Hero from "./sections/hero";
+import Hero from "./sections/Hero";
 import AnimatedCounter from "./components/AnimatedCounter";
 import ProjectShowcase from "./sections/ProjectShowcase";
 import NavBar from "./components/NavBar";
-import LogoSection from "./components/LogoSection";
+import LogoSection from "./sections/LogoSection";
+import FeatureSection from "./sections/FeatureSection";
+import ExperienceSection from "./sections/ExperienceSection";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <AnimatedCounter />
       <ProjectShowcase />
       <LogoSection />
+      <FeatureSection />
+      <ExperienceSection />
     </>
   );
 };

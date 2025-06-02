@@ -6,7 +6,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
+      const isScrolled = window.scrollY > 50;
       setscrolled(isScrolled);
     };
 
@@ -22,11 +22,11 @@ const NavBar = () => {
       <div className="inner">
         <a
           href="#hero"
-          className="group flex items-center font-semibold text-xl text-black overflow-hidden"
+          className="group flex items-center font-semibold text-xl text-gray-800 overflow-hidden"
         >
           <span>Hermanus</span>
           <span className="ml-2 inline-block max-w-0 overflow-hidden whitespace-nowrap text-blue-700 transition-all duration-300 group-hover:max-w-[8rem]">
-            | Rumapea
+            Rumapea
           </span>
         </a>
         <nav className="desktop">
