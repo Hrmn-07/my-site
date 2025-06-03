@@ -42,7 +42,7 @@ const Footer = () => {
             </span>
           </a>
           <a
-            href="/Hermanus-Rumapea-Resume.pdf"
+            href="/Hermanus_Rumapea_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex flex-col items-center justify-center"
