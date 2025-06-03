@@ -1,5 +1,4 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
 import { words } from "../constanst/index";
@@ -132,7 +131,7 @@ const Hero = () => {
         </header>
         {/* 3D Model */}
         <figure>
-          <div className="hero-3d-layout pointer-events-none">
+          <div className="hero-3d-layout pointer-events-none hover:cursor-grab">
             <HeroExperience />
           </div>
         </figure>

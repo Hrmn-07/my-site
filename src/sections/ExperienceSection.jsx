@@ -1,13 +1,61 @@
-// minute 2:17:20
 import GlowingCard from "../components/GlowingCard";
 import TitleHeader from "../components/TitleHeader";
 import { expCards } from "../constanst";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ExperienceSection = () => {
+  useGSAP(() => {
+    gsap.utils.toArray(".timeline-card").forEach((card) => {
+      gsap.from(card, {
+        xPercent: -100,
+        opacity: 0,
+        transformOrigin: "left left",
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+        },
+      });
+    });
+
+    gsap.to(".timeline", {
+      transformOrigin: "bottom bottom",
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: ".timeline",
+        start: "top center",
+        end: "70% center",
+        onUpdate: (self) => {
+          gsap.to(".timeline", {
+            scaleY: 1 - self.progress,
+            duration: 0.1,
+          });
+        },
+      },
+    });
+
+    gsap.utils.toArray(".expText").forEach((text) => {
+      gsap.from(text, {
+        xPercent: 0,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: text,
+          start: "top 70%",
+        },
+      });
+    });
+  }, []);
   return (
     <div
       id="experience"
-      className="w-full mt-20 md:mt-40 section-padding xl:px-0"
+      className="w-full mt-20 md:mt-40 section-padding xl:px-0 scroll-mt-24"
     >
       <div className="w-full h-full px-5 md:px-20">
         <TitleHeader
@@ -32,7 +80,9 @@ const ExperienceSection = () => {
                         <img src={card.logoPath} alt="logo" />
                       </div>
                       <div className="">
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
+                        <h1 className="font-semibold text-3xl text-gray-800">
+                          {card.title}
+                        </h1>
                         <p className="my-5 text-gray-800">► {card.date}</p>
                         <p className="text-gray-800 italic">Responsibilities</p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-gray-800">

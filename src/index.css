@@ -127,11 +127,11 @@ section {
           @apply text-black relative;
 
           span {
-            @apply transition-colors duration-300 hover:text-black;
+            @apply transition-colors duration-300 hover:text-blue-700;
           }
 
           .underline {
-            @apply absolute -bottom-1 left-0 w-0 h-1 bg-blue-700 transition-all duration-300 group-hover:w-full;
+            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full;
           }
         }
       }
@@ -239,11 +239,11 @@ section {
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-white-50;
   }
 
   .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-white-50 bg-white-50;
   }
 
   .exp-card-wrapper {
@@ -294,7 +294,7 @@ section {
   }
 
   .footer {
-    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
+    @apply my-10 md:mt-20 mt-10 text-gray-800 px-5 md:px-20 xl:px-20 flex items-center justify-center;
 
     .footer-container {
       @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
@@ -364,14 +364,20 @@ section {
   width: 2px;
   background: linear-gradient(
     0deg,
-    rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
-    #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
+    rgba(255, 0, 0, 0) 0%,
+    #ff3c38 10%,
+    /* Red */ #ff8c00 20%,
+    /* Orange */ #ffee00 30%,
+    /* Yellow */ #32ff7e 40%,
+    /* Lime Green */ #00cfff 50%,
+    /* Cyan */ #2e64fe 60%,
+    /* Blue */ #a163f7 70%,
+    /* Purple */ #ff61f6 80%,
+    /* Pink */ #ff1493 90%,
+    /* Deep Pink */ rgba(255, 0, 255, 0) 100%
   );
 }
-/* 195, 237, 255 */
+
 .gradient-edge:nth-of-type(1) {
   left: 0;
   background: rgb(255, 255, 255, 0.5);
@@ -436,7 +442,16 @@ section {
   transform: translate(-50%, -50%);
   border-radius: 12px;
   border: 3px solid transparent;
-  background: radial-gradient(circle at center, #4c4c4c45 0%, #3939397b 100%);
+  background: radial-gradient(
+    circle at center,
+    #ff3c38 0%,
+    /* Red */ #ff8c00 20%,
+    /* Orange */ #ffee00 40%,
+    /* Yellow */ #32ff7e 60%,
+    /* Lime Green */ #00cfff 75%,
+    /* Cyan */ #a163f7 90%,
+    /* Purple */ #ff61f6 100% /* Pink */
+  );
   background-attachment: fixed;
   mask: linear-gradient(#0000, #0000),
     conic-gradient(

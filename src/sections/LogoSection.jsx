@@ -11,7 +11,7 @@ const LogoIcon = ({ icon }) => {
 
 const LogoSection = () => {
   return (
-    <div className="md:my-20 my-10 relative">
+    <div className="md:my-20 my-10 relative scroll-mt-24" id="skills">
       <div className="gradient-edge" />
       <div className="gradient-edge" />
       <TitleHeader sub="Technologies I've Worked With" />

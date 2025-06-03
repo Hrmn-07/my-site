@@ -34,7 +34,7 @@ const NavBar = () => {
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
                 <a href={link}>
-                  <span>{name}</span>
+                  <span className="font-semibold">{name}</span>
                   <span className="underline" />
                 </a>
               </li>

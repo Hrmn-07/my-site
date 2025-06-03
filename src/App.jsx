@@ -5,6 +5,8 @@ import NavBar from "./components/NavBar";
 import LogoSection from "./sections/LogoSection";
 import FeatureSection from "./sections/FeatureSection";
 import ExperienceSection from "./sections/ExperienceSection";
+import ContactSection from "./sections/ContactSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <LogoSection />
       <FeatureSection />
       <ExperienceSection />
+      <ContactSection />
+      <Footer />
     </>
   );
 };
